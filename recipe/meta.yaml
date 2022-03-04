@@ -1,4 +1,4 @@
-{% set version = '1.37.5' %}
+{% set version = "1.38.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/texreg_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/texreg/texreg_{{ version }}.tar.gz
-  sha256: 4ccc7ac49ef971c2e254ca32f15782a3f7861f1b674d874a7a69a6e8fa9e6331
+  sha256: e85c87da2317f1b98f96b4d6c1895d3953c2b3d122e0a539bdb1c3bebff61ab4
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -39,15 +39,11 @@ test:
 about:
   home: http://github.com/leifeld/texreg/
   license: GPL-3.0-only
-  summary: Converts coefficients, standard errors, significance stars, and goodness-of-fit statistics
-    of statistical models into LaTeX tables or HTML tables/MS Word documents or to nicely
-    formatted screen output for the R console for easy model comparison. A list of several
-    models can be combined in a single table. The output is highly customizable. New
-    model types can be easily implemented. (If the Zelig package, which this package
-    enhances, cannot be found on CRAN, you can find it at <https://github.com/IQSS/Zelig>.)
+  summary: Converts coefficients, standard errors, significance stars, and goodness-of-fit statistics of statistical models into LaTeX tables or HTML tables/MS Word documents or to nicely formatted screen output for the R console for easy model comparison. A list of several models can be combined in a single table. The output
+    is highly customizable. New model types can be easily implemented. (If the Zelig package, which this package enhances, cannot be found on CRAN, you can find it at <https://github.com/IQSS/Zelig>.)
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
