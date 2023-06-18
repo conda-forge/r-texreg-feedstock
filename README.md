@@ -1,11 +1,11 @@
-About r-texreg
-==============
+About r-texreg-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-texreg-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/leifeld/texreg/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-texreg-feedstock/blob/main/LICENSE.txt)
 
 Summary: Converts coefficients, standard errors, significance stars, and goodness-of-fit statistics of statistical models into LaTeX tables or HTML tables/MS Word documents or to nicely formatted screen output for the R console for easy model comparison. A list of several models can be combined in a single table. The output is highly customizable. New model types can be easily implemented. (If the Zelig package, which this package enhances, cannot be found on CRAN, you can find it at <https://github.com/IQSS/Zelig>.)
 
